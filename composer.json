@@ -1,27 +1,20 @@
 {
-    "name": "jarouche/viacep",
+    "name": "heronsantoscom/buscaviacep",
     "description": "Classe para pesquisar o CEP atraves do servico gratuito viacep",
-    "keywords": ["CEP","Pesquisa","ViaCEP"],
     "type": "library",
-    "require": {
-        "php": ">=5.5.0"
-    },
     "license": "MIT",
     "authors": [
         {
             "name": "Rodrigo Sartori Jarouche",
             "email": "rjarouche@gmail.com",
             "homepage": "http://rodrigojarouche.blogspot.com.br"
+        },
+        {
+            "name": "Heron Santos",
+            "email": "contato@heronsantros.com",
+            "homepage": "http:///www.heronsantos.com"
         }
     ],
-    "minimum-stability": "dev",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-dev"
-        }
-    },
-    "homepage": "http://rodrigojarouche.blogspot.com.br",
-	
     "autoload": {
         "psr-4": {
             "Jarouche\\ViaCEP\\": "src/"
