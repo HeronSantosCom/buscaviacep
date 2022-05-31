@@ -10,7 +10,7 @@ namespace Jarouche\ViaCEP;
 
 class BuscaViaCEPJSONP extends BuscaViaCEP
 {
-    const CEP_METHOD = '/json/unicode/';
+    const CEP_METHOD = '/json/';
 
     /**
      * Armazena o nome do CallBack Function
