@@ -81,10 +81,9 @@ abstract class buscaViaCEP implements ViaCEPInterface
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_HEADER, false);
         $url = self::CEP_SITE . $this->cep . static::CEP_METHOD . $this->outros_parametros;
-        var_dump($url);
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_SSLVERSION, 3);
+        // curl_setopt($ch, CURLOPT_SSLVERSION, 3);
         $this->results_string = curl_exec($ch);
         if (curl_errno($ch)) {
             throw new \Exception(curl_error($ch));
